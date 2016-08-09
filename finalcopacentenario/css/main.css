@@ -1,0 +1,388 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Noticia+Text:400,700);
+@font-face {
+  font-family: 'lt-icons';
+  src: url('../fonts/lt-icons.eot?97780288');
+  src: url('../fonts/lt-icons.eot?97780288#iefix') format('embedded-opentype'),
+       url('../fonts/lt-icons.woff?97780288') format('woff'),
+       url('../fonts/lt-icons.ttf?97780288') format('truetype'),
+       url('../fonts/lt-icons.svg?97780288#lt-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "lt-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  font-size: 150%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-gplus:before { content: '\e802'; } /* '' */
+.icon-pinterest:before { content: '\e803'; } /* '' */
+.icon-tumblr:before { content: '\e804'; } /* '' */
+.icon-skype:before { content: '\e805'; } /* '' */
+.icon-whatsapp:before { content: '\e806'; } /* '' */
+.icon-star:before { content: '\e807'; } /* '' */
+.icon-play:before { content: '\e808'; } /* '' */
+.icon-rss:before { content: '\e809'; } /* '' */
+.icon-search:before { content: '\e80a'; } /* '' */
+.icon-left:before { content: '\e80b'; } /* '' */
+.icon-right:before { content: '\e80c'; } /* '' */
+
+body {
+  background-color: #d6dbe7;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.2em;
+}
+a {
+  color: #cf443f;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #ee5f5a;
+}
+ul {
+  margin-left: 0;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Noticia Text', serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*** Nav La Tercera ***/
+header #header_lt {
+    background-color: #c41325;
+    display: block;
+    height: auto;
+    font-size: 14px;
+    font-family: Sans-serif;
+    top: 0;
+    width: 100%;
+    z-index: 1300;
+}
+header #header_lt figure {
+    padding: 10px 10px 0;
+    margin: 0px;
+    display: inline-block;
+}
+/*logo*/
+header #header_lt figure img {
+    width: auto;
+    height: 25px;
+}
+#header_lt a.prev {
+    display: none;
+}
+#header_lt nav {
+    display: inline-block;
+    vertical-align: top;
+}
+#header_lt nav ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+#header_lt nav ul li {
+    display: inline-block;
+}
+#header_lt nav ul li a {
+    background-color: #c41325;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 14px 4px;
+    text-decoration: none;
+
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+#header_lt nav ul li a:hover,
+#header_lt nav ul li a:focus {
+    background-color: #a8111d;
+}
+/*header mobile*/
+@media (max-width: 989px) {
+    #header_lt nav {
+        display: none;
+    }
+    header #header_lt figure {
+        padding: 10px;
+    }
+    #header_lt a.prev {
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        font-size: 30px;
+        text-decoration: none;
+        line-height: 25px;
+        padding: 10px 15px;
+    }
+    header #header_lt {
+        position: static;
+    }
+}
+@media (max-width: 768px) {
+    #header_lt a.prev {
+      padding: 5px;
+    }
+    header #header_lt figure img {
+      height: 20px;
+    }
+    header #header_lt figure {
+      padding: 10px 2px 0;
+    }
+    header #header_lt {
+      background-color: #c41325;
+      height: 40px;
+    }
+}
+p.browserupgrade {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding:20px;
+}
+p.browserupgrade a {
+  text-decoration: underline;
+}
+
+/*footer*/
+#footer {
+  background-color: #2d2b29;
+  width: 100%;
+}
+#footer .footer-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#footer .footer-top .lt-footer {
+  margin: 25px 0 15px;
+  max-width: 160px;
+  display: block;
+}
+#footer .footer-top ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer-top ul li {
+  display: block;
+  font-size: 14px;
+  line-height: 2em;
+  margin-top: 0;
+}
+#footer .footer-top ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,1);
+
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+#footer .footer-top ul li a:hover {
+  color: rgba(255,255,255,0.7);
+}
+#footer .copesa {
+  display: table;
+  background-color: #292b31;
+  width: 100%;
+  padding: 15px;
+}
+#footer .logo_copesa, #footer .logos_pie {
+  display: table-cell;
+  vertical-align: middle;
+}
+#footer .logo_copesa {
+  width: 200px;
+  padding-left: 15px;
+}
+#footer .logos_pie ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+#footer .logos_pie ul li {
+  display: inline-block;
+}
+#footer .logos_pie ul li a {
+  display: block;
+  opacity: 0.5;
+  padding: 0 5px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#footer .logos_pie ul li a:hover,
+#footer .logos_pie ul li a:focus {
+  opacity: 1.0;
+}
+#footer .creditos {
+  color: #4e4f54;
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #1b1d21;
+}/*** Fin estilos comunes ***/
+
+.grid-squares ul {
+  padding: 0; 
+  margin: 0;
+  width: 100%;
+}
+.grid-squares ul li {
+  list-style-type: none; 
+  float: left;
+  width: 50%;
+  height: auto;
+  padding-bottom: 40%;
+  margin: 0;
+  vertical-align: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.grid-squares ul li.large-sq {
+  width: 100%;
+  height: auto;
+  padding-bottom: 160%;
+
+  background: #000 url(../img/sanchez-cover100.jpg) no-repeat center center;
+  background-size: cover;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+@media (min-width: 768px) {
+  .grid-squares ul li {
+    width: 33.33%;
+    padding-bottom: 26.663999999999998%;
+  }
+  .grid-squares ul li.large-sq {
+    width: 33.33%;
+    padding-bottom: 53.32%;
+  }
+}
+@media (min-width: 992px) {
+  .grid-squares ul li {
+    width: 25%;
+    height: auto;
+    padding-bottom: 20%;
+  }
+  .grid-squares ul li.large-sq {
+    width: 25%;
+    height: auto;
+    padding-bottom: 40%;
+  }
+}
+@media ( min-width: 1200px) {
+  .grid-squares ul li {
+    width: 16.66666666666667%;
+    height: auto;
+    padding-bottom: 12.8%;
+  }
+  .grid-squares ul li.large-sq {
+    width: 16.66666666666667%;
+    height: auto;
+    padding-bottom: 25.599%;
+  }
+}
+#aniimated-thumbnials li:hover {
+  cursor: pointer;
+  background-size: 110%;
+
+}
+#aniimated-thumbnials li a {
+    display: none;
+}
+#aniimated-thumbnials li {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.share {
+  background: #c41325;
+  padding: 30px 0;
+}
+.share a {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d6d9e2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.share a:hover, .share a:focus {
+  width: 55px;
+  height: 55px;
+  padding-top: 12px;
+  background-color: #fff;
+}
+.lg-download {
+  display: none;
+}
+#lg-counter {
+  font-family: 'Noticia Text', serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.lg-sub-html h4 {
+  font-family: 'Noticia Text', serif; 
+}
+
+@media (min-width: 768px) {
+  .lg-sub-html p {
+    font-size: 16px;
+  }
+  .lg-sub-html h4 {
+    font-size: 23px;
+  }
+}
